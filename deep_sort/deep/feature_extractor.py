@@ -1,3 +1,11 @@
+'''
+Author: your name
+Date: 2022-01-12 15:32:50
+LastEditTime: 2022-01-12 15:55:21
+LastEditors: your name
+Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+FilePath: /deep_sort_pytorch/deep_sort/deep/feature_extractor.py
+'''
 import torch
 import torchvision.transforms as transforms
 import numpy as np
@@ -5,9 +13,9 @@ import cv2
 import logging
 
 from .model import Net
-from fastreid.config import get_cfg
-from fastreid.engine import DefaultTrainer
-from fastreid.utils.checkpoint import Checkpointer
+# from fastreid.config import get_cfg
+# from fastreid.engine import DefaultTrainer
+# from fastreid.utils.checkpoint import Checkpointer
 
 class Extractor(object):
     def __init__(self, model_path, use_cuda=True):

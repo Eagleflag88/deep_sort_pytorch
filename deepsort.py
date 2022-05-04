@@ -164,7 +164,7 @@ if __name__ == "__main__":
     cfg.merge_from_file(args.config_deepsort)
     if args.fastreid:
         cfg.merge_from_file(args.config_fastreid)
-        cfg.USE_FASTREID = True
+        cfg.USE_FASTREID = False
     else:
         cfg.USE_FASTREID = False
 
